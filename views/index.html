@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</head>
+<body>
+    <div class="d-flex justify-content-center"">
+        <h2>Ejercicio M071_01: TypeScript Vehícles</h2>
+    </div>
+    <form class="form mx-5" role="form" id="myForm" name="myForm">
+        <div class="form-row justify-content-between">
+            <div class="form-group col-md-3">
+                <legend>Plate</legend>
+                <input type="text" name="inputPlate" id="inputPlate" class="form-control form-control-sm">
+                <div class="invalid-feedback" id="errorPlate"></div>
+            </div>
+            <div class="form-group col-md-3">
+                <legend>Brand</legend>
+                <input type="text" name="inputBrand" id="inputBrand" class="form-control form-control-sm">
+                <div class="invalid-feedback" id="errorBrand"></div>
+            </div>
+            <div class="form-group col-md-3">
+                <legend>Color</legend>
+                <input type="text" name="inputColor" id="inputColor" class="form-control form-control-sm">
+                <div class="invalid-feedback" id="errorColor"></div>
+            </div>
+            <div class="form-group col-md-12">
+                <button type="button" id="creaCar" class="btn btn-primary btn-lg">Create car</button>
+            </div>
+        </div>        
+    </form>
+    
+    <form class="form mx-5" role="form" id="myForm2" name="myForm2">
+        <div class="form-row">
+          <div class="col-3">
+            <label for="formMarcaRueda1">Marca Rueda 1</label>
+            <input type="text" class="form-control" name="inputWheel1" id="inputWheel1">
+            <div class="invalid-feedback" id="errorWheel1Brand"></div>
+        </div>
+          <div class="col-3">
+            <label for="formDiametroRueda1">Diámetro Rueda 1</label>
+            <input type="text" class="form-control" name="inputWheelD1" id="inputWheelD1">
+            <div class="invalid-feedback" id="errorWheel1"></div>
+          </div>
+          <div class="col-3">
+            <label for="formMarcaRueda2">Marca Rueda 2</label>
+            <input type="text" class="form-control" name="inputWheel2" id="inputWheel2">
+            <div class="invalid-feedback" id="errorWheel2Brand"></div>          </div>
+          <div class="col-3">
+            <label for="formDiametroRueda2">Diámetro Rueda 2</label>
+            <input type="text" class="form-control" name="inputWheelD2" id="inputWheelD2">
+            <div class="invalid-feedback" id="errorWheel2"></div>
+          </div>
+          <div class="col-3 mt-3">
+            <label for="formMarcaRueda3">Marca Rueda 3</label>
+            <input type="text" class="form-control" name="inputWheel3" id="inputWheel3">
+            <div class="invalid-feedback" id="errorWheel3Brand"></div>
+        </div>
+          <div class="col-3 mt-3">
+            <label for="formDiametroRueda3">Diámetro Rueda 3</label>
+            <input type="text" class="form-control" name="inputWheelD3" id="inputWheelD3">
+            <div class="invalid-feedback" id="errorWheel3"></div>
+          </div>
+          <div class="col-3 mt-3">
+            <label for="formMarcaRueda4">Marca Rueda 4</label>
+            <input type="text" class="form-control" name="inputWheel4" id="inputWheel4">
+            <div class="invalid-feedback" id="errorWheel4Brand"></div>
+        </div>
+          <div class="col-3 mt-3">
+            <label for="formDiametroRueda4">Diámetro Rueda 4</label>
+            <input type="text" class="form-control" name="inputWheelD4" id="inputWheelD4">
+            <div class="invalid-feedback" id="errorWheel4"></div>
+          </div>
+          <div class="form-group col-md-3 mt-3">
+            <button type="button" id="creaWheel" class="btn btn-primary btn-lg">Add Wheels</button>
+        </div>
+        <div class="form-group col-md-3 mt-3">
+            <button type="button" id="nuevoCar" class="btn btn-secondary btn-lg">Add New Car</button>
+        </div>
+
+        </div>
+
+    </form>
+    <p id="carInfo"></p>    
+</body>
